@@ -1,8 +1,20 @@
-h1 {
-  color: green;
+* {
+  box-sizing: border-box;
 }
 
 body {
   text-align: center;
-  margin: auto;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
